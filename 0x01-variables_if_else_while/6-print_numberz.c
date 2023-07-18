@@ -15,7 +15,7 @@
 int main(void)
 {
 	int nu = 0;
-	
+
 	for (nu = 0; nu < 10; nu++)
 	{
 		putchar((nu % 10) + '0');
