@@ -13,6 +13,7 @@
 int main(void)
 {
 	char let;
+
 	for (let = 'a'; let <= 'z'; let++)
 	{
 		if (let != 'e' && let != 'q')
