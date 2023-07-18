@@ -1,16 +1,20 @@
 /*
+ * File: 10-print_comb2.c
  * Author: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
 #include <stdio.h>
 
 /**
- * Prints the numbers from 00 to 99, numbers separated by
+ * main - Prints the numbers from 00 to 99, numbers separated by
  *        a comma followed by a space, in ascending order.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int digit1, digit2;
+	int digit1 = 0;
+	int digit2 = 0;
 
 	for (digit1 = 0; digit1 < 10; digit1++)
 	{
@@ -19,11 +23,10 @@ int main(void)
 			putchar((digit1 % 10) + '0');
 			putchar((digit2 % 10) + '0');
 
-			if (digit1 == 9 && digit2 == 9) 
+			if (digit2 == 9 && digit1 == 9)
 			{
 				continue;
-			} 
-			
+			}
 			putchar(',');
 			putchar(' ');
 		}

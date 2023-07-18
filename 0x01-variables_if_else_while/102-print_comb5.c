@@ -1,29 +1,32 @@
 /*
+ * File: 102-print_comb5.c
  * Author: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
 #include <stdio.h>
 
 /**
- * Prints all possible combinations of two two-digit numbers,
+ * main - Prints all possible combinations of two two-digit numbers,
  *        ranging from 0-99, separated by a comma followed by a space.
+ * 
+ * Return: Always 0.
  */
 int main(void)
 {
-	int num1;
-	int num2;
+	int number1 = 0;
+	int number2 = 0;
 
-	for (num1 = 0; num1 <= 98; num1++)
+	for (number1 = 0; number1 <= 98; number1++)
 	{
-		for (num2 = num1 + 1; num2 <= 99; num2++)
+		for (number2 = number1 + 1; number2 <= 99; number2++)
 		{
-			putchar((num1 / 10) + '0');
-			putchar((num1 % 10) + '0');
+			putchar((number1 / 10) + '0');
+			putchar((number1 % 10) + '0');
 			putchar(' ');
-			putchar((num2 / 10) + '0');
-			putchar((num2 % 10) + '0');
+			putchar((number2 / 10) + '0');
+			putchar((number2 % 10) + '0');
 
-			if (num1 == 98 && num2 == 99)
+			if (number1 == 98 && number2 == 99)
 			{
 				continue;
 			} 

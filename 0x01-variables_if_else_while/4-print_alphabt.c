@@ -6,7 +6,9 @@
 #include <stdio.h>
 
 /**
- * Print the alphabets in lowercase, except for q and e.
+ * main - Print the alphabets in lowercase, except for q and e.
+ *
+ * Return: Always 0
  */
 int main(void)
 {
@@ -16,7 +18,7 @@ int main(void)
 		if (let != 'e' && let != 'q')
 		{
 			putchar(let);
-		} 
+		}
 	}
 	putchar('\n');
 
