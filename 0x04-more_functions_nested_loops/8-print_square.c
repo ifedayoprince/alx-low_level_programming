@@ -3,7 +3,7 @@
  * Author: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
-#include "school.h"
+#include "main.h"
 
 /**
  * print_square - Prints a square using the character #.

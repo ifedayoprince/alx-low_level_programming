@@ -1,8 +1,8 @@
-#ifndef SCHOOL_H
-#define SCHOOL_H
+#ifndef MAIN_H
+#define MAIN_H
 
 /*
- * File: school.h
+ * File: main.h
  * Author: Ifedayo P Oni <ifedayoprince@gmail.com>
  * Desc: Header file containing prototypes for all functions
  *       used in the 0x03-more_functions_nested_loops directory.

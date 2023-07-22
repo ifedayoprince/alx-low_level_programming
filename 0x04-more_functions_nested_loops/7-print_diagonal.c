@@ -3,7 +3,7 @@
  * Author: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
-#include "school.h"
+#include "main.h"
 
 /**
  * print_diagonal - Draws a diagonal line using the \ character.

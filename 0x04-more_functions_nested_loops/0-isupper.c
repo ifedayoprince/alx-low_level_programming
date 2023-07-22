@@ -3,7 +3,7 @@
  * Author: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
-#include "school.h"
+#include "main.h"
 
 /**
  * _isupper - Checks for uppercase characters.
