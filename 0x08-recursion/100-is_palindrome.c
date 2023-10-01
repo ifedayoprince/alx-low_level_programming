@@ -10,7 +10,7 @@ int check_palindrome(char *s, int lengthgth, int index);
 int is_palindrome(char *s);
 
 /**
- * find_strlengthgth - Returns the lengthgth of a string.
+ * find_strlength - Returns the lengthgth of a string.
  * @s: The string to be measured.
  *
  * Return: The lengthgth of the string.
