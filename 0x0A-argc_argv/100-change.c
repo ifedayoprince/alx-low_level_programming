@@ -11,15 +11,12 @@ int main(int argc, char *argv[])
 	int possibleCents[] = {25, 10, 5, 2, 1};
 	int number, centCounter;
 
-	printf("%s", argv[1]);
-	return (0);
-
-	if(argc < 2)
+	if (argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0) 
+	if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
 		return (0);
@@ -27,20 +24,24 @@ int main(int argc, char *argv[])
 
 	number = atoi(argv[1]);
 	centCounter = 0;
-	
+
 	while (number > 0)
 	{
 		int i = 0;
 
 		/* while (i < (int)(sizeof(possibleCents)/sizeof(possibleCents[0]))) */
-		while (i < 6)
+		while (i < (int)(sizeof(possibleCents) / sizeof(int)))
 		{
 			if (possibleCents[i] > number)
+			{
+				i++;
 				continue;
-
+			}
+			
+			/* printf("Subtracting %d from %d, Remainder %d, Cent Counter %d\n",possibleCents[i], number, number - possibleCents[i], centCounter); */
 			number = number - possibleCents[i];
 			centCounter++;
-			i++;
+			i = 0;
 		}
 	}
 
