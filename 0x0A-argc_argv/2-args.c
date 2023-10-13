@@ -4,6 +4,7 @@
  */
 
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Prints all arguments it receives.
