@@ -8,9 +8,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
-
-bool isnumber(char string[]);
+#include "main.h"
 
 /**
  * main - Prints the addition of positive numbers,
