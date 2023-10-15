@@ -3,7 +3,7 @@
 
 /*
  * File: function_pointers.h
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  * Desc: Header file containing prototypes for all functions
  *       used in the 0x0E-function_pointers directory.
  */

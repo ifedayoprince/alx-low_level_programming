@@ -3,7 +3,7 @@
 
 /*
  * File: 0-object_like_macro.h
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  * Desc: Header file that defines a macro named
  *       SIZE as an abbreviation for the token 1024.
  */

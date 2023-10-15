@@ -3,7 +3,7 @@
 
 /*
  * File: variadic_functions.h
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  * Desc: Header file containing prototypes for all functions used.
  */
 

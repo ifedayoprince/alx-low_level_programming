@@ -1,6 +1,7 @@
 /*
  * File: 3-op_functions.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include "3-calc.h"
 
