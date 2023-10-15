@@ -27,7 +27,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
 	number1 = atoi(argv[1]);
 	option = argv[2];
 	number2 = atoi(argv[3]);
-	if (number2 == ".")
+	if (option == ".")
 	{
 		printf("99");
 	}
