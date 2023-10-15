@@ -1,6 +1,7 @@
 /*
  * File: 1-print_numbers.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include "variadic_functions.h"
 #include <stdio.h>

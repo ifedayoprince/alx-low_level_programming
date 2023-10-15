@@ -1,6 +1,7 @@
 /*
  * File: 2-print_strings.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include "variadic_functions.h"
 #include <stdio.h>

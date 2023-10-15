@@ -1,6 +1,7 @@
 /*
  * File: 2-main.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include <stdio.h>
 
