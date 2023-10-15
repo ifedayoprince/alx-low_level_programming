@@ -7,8 +7,8 @@
 #include "main.h"
 
 /**
- * strdup - Creates a new space in memory and
- * 				copy a string to that spot.
+ * _strdup - Creates a new space in memory and
+ *            copy a string to that spot.
  * @str: the string to be copied
  *
  * Return: If str == NULL or insufficient memory is available - NULL.
