@@ -7,9 +7,8 @@
 #include "main.h"
 
 /**
- * _strdup - Creates a new space in memory and
- *           copy a string to that spot
- *
+ * strdup - Creates a new space in memory and
+ * 				copy a string to that spot.
  * @str: the string to be copied
  *
  * Return: If str == NULL or insufficient memory is available - NULL.
@@ -24,20 +23,20 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (i = 0; str[i]; i++)
-		len += 1;
+		len++;
 
 	strMem = malloc(sizeof(char) * (len + 1));
 
 	if (strMem == NULL)
 		return (NULL);
 
-	while (i < (int)sizeof(str))
+	while (i < len)
 	{
 		strMem[i] = str[i];
 		i++;
 	}
 
-	strMem[len] = '\0';
+	strMem[len+1] = '\0';
 
 	return (strMem);
 }

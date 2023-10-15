@@ -9,7 +9,7 @@
 
 /**
  * str_concat - Allocates memory for 2 strings
- *              and copy them (concatenate)
+ * 					and copy them (concatenate).
  * @s1 pointer to the first string
  * @s2: pointer to the second string
  *
