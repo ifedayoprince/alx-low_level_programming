@@ -1,10 +1,8 @@
-/**
+/*
  * File: 2-args.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
- */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
 
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Prints all arguments it receives.
@@ -13,14 +11,12 @@
  *
  * Return: Always 0.
  */
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
-	int i = 0;
-	while (i < argc) 
-	{
-		printf("%s\n", argv[i]);
-		i++;
-	}
+	int arg;
+
+	for (arg = 0; arg < argc; arg++)
+		printf("%s\n", argv[arg]);
 
 	return (0);
 }

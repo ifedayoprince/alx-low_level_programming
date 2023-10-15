@@ -1,30 +1,30 @@
-/**
+/*
  * File: 0-create_array.c
  * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
-#include <stdlib.h>
+
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * create_array - Creates an array of chars,
- *                and initializes it with a specific char.
- * @size: the size of the array
- * @c: character to fill the array with
+ * create_array - Creates a character array and
+ *                initializes it with a character
+ * @size: the size of the array.
+ * @c: a specific char.
  *
- * Return: a pointer to the array or NULL if size = 0 or it fails
+ * Return: If size == 0 or the function fails - NULL.
+ *         Otherwise - a pointer to the array.
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned  size, char c)
 {
-    char *array = malloc(size * sizeof(char));
-    int i = 0;
-    if (array == NULL || size == 0)
-    {
-        return NULL;
-    }
-    while (i < size) {
-        array[i] = c;
-        i++;
-    }
-    array[i] = '\0';
-    return array;
+	unsigned  i;
+	char *arr = malloc(size * sizeof(char));
+
+	if (size == 0 || arr == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		arr[i] = c;
+
+	return (arr);
 }

@@ -1,11 +1,9 @@
-/**
+/*
  * File: 100-change.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
- */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
 /**
  * main - Prints the minimum number of coins to
@@ -18,42 +16,43 @@
  */
 int main(int argc, char *argv[])
 {
-	int possibleCents[] = {25, 10, 5, 2, 1};
-	int number, centCounter;
+	int cents, coins = 0;
 
-	if (argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	number = atoi(argv[1]);
-	centCounter = 0;
-
-	while (number > 0)
-	{
-		int i = 0;
-
-		while (i < (int)(sizeof(possibleCents) / sizeof(int)))
+		coins++;
+		if ((cents - 25) >= 0)
 		{
-			if (possibleCents[i] > number)
-			{
-				i++;
-				continue;
-			}
-
-			number = number - possibleCents[i];
-			centCounter++;
-			i = 0;
+			cents -= 25;
+			continue;
 		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
 	}
 
-	printf("%d\n", centCounter);
+	printf("%d\n", coins);
 
 	return (0);
 }
