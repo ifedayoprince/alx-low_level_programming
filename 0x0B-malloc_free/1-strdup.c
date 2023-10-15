@@ -9,8 +9,7 @@
 /**
  * _strdup - Creates a new space in memory and
  *            copy a string to that spot.
- * @str: the string to be copied
- *
+ * @str: the string to be copied.
  * Return: If str == NULL or insufficient memory is available - NULL.
  *         Otherwise - a pointer to the duplicated string.
  */
@@ -37,7 +36,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	strMem[len+1] = '\0';
+	strMem[len + 1] = '\0';
 
 	return (strMem);
 }
