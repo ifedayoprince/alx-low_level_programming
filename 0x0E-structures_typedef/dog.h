@@ -3,7 +3,8 @@
 
 /*
  * File: dog.h
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> * Desc: Header file that defines a new type struct dog.
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ * Desc: Header file that defines a new type struct dog.
  */
 
 /**

@@ -15,7 +15,7 @@
  *
  * Return: If the function fails - NULL.
  *         Otherwise - a pointer to the
- * 		   		concatenated space in memory.
+ *               concatenated space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
