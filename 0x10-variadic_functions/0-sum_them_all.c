@@ -1,6 +1,6 @@
 /*
  * File: 0-sum_them_all.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
 #include <stdarg.h>

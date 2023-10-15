@@ -36,7 +36,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
 	}
 
 	if ((*option == '/' && number2 == 0) ||
-	    (*option == '%' && number2 == 0))
+		(*option == '%' && number2 == 0))
 	{
 		printf("Error\n");
 		exit(100);

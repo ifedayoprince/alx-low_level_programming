@@ -1,6 +1,6 @@
 /*
  * File: 3-get_op_func.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
 #include <stdlib.h>
@@ -23,13 +23,10 @@ int (*get_op_func(char *s))(int, int)
 		{"*", op_mul},
 		{"/", op_div},
 		{"%", op_mod},
-		{NULL, NULL}
-	};
+		{NULL, NULL}};
 
-	for (;*(ops[i].op) != *s && ops[i].op != NULL; i++)
-	{
-
-	}
+	while (*(ops[i].op) != *s && ops[i].op != NULL)
+		i++;
 
 	return (ops[i].f);
 }

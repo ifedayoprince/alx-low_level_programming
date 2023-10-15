@@ -1,6 +1,6 @@
 /*
  * File: 2-int_index.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  */
 
 #include "function_pointers.h"

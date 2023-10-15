@@ -1,6 +1,7 @@
 /*
  * File: 1-string_nconcat.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include "main.h"
 #include <stdlib.h>
@@ -13,7 +14,7 @@
  * @n: The maximum number of bytes of s2 to concatenate to s1.
  *
  * Return: If the function fails - NULL.
- *         Otherwise - a pointer to the 
+ *         Otherwise - a pointer to the
  * 		   		concatenated space in memory.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)

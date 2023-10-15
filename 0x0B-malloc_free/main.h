@@ -1,8 +1,8 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
- * File: holberton.h
+ * File: main.h
  * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> * Desc: Header file containing prototypes for all functions
  *       used in the 0x0A-malloc_free directory.
  */

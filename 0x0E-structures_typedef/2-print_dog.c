@@ -1,6 +1,7 @@
 /*
  * File: 2-print_dog.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include <stdio.h>
 #include <stdlib.h>

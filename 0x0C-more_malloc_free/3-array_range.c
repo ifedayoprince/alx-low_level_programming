@@ -1,6 +1,7 @@
 /*
  * File: 3-array_range.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include <stdlib.h>
 #include "main.h"

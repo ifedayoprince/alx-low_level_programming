@@ -3,7 +3,7 @@
 
 /*
  * File: 3-calc.h
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> 
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
  * Desc: Header file containing all structures and
  *       prototypes used by the 3-main.c program.
  */

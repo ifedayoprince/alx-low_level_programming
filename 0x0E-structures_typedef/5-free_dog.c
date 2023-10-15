@@ -1,6 +1,7 @@
 /*
  * File: 5-free_dog.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include <stdlib.h>
 #include "dog.h"

@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	if (strMem == NULL)
 		return (NULL);
 
-	while (i < (int) sizeof(str))
+	while (i < (int)sizeof(str))
 	{
 		strMem[i] = str[i];
 		i++;

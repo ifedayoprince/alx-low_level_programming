@@ -1,6 +1,7 @@
 /*
  * File: 0-malloc_checked.c
- * Auth: Ifedayo P Oni <ifedayoprince@gmail.com> */
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
 
 #include "main.h"
 #include <stdlib.h>
