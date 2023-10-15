@@ -24,18 +24,19 @@ int main(int __attribute__((unused)) argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	number1 = atoi(argv[1]);
 	option = argv[2];
 	number2 = atoi(argv[3]);
 
-	if (option[1] != '\0' || get_op_func(option) == NULL || option == '.')
+	if (option[1] != '\0' || get_op_func(option) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
 	if ((*option == '/' && number2 == 0) ||
-		(*option == '%' && number2 == 0))
+	    (*option == '%' && number2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
