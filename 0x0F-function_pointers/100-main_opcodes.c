@@ -1,7 +1,7 @@
 /*
  * File: 100-main_opcodes.c
  * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
- * */
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
