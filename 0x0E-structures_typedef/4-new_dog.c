@@ -57,7 +57,7 @@ char *_strcopy(char *destination, char *source)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newDog;
-	
+
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
