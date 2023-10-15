@@ -28,7 +28,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
 	option = argv[2];
 	number2 = atoi(argv[3]);
 
-	if (option[1] != '\0' || get_op_func(option) == NULL || option == ".")
+	if (option[1] != '\0' || get_op_func(option) == NULL || option == '.')
 	{
 		printf("Error\n");
 		exit(99);
