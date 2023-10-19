@@ -1,0 +1,11 @@
+// Pseudo code for print
+
+- Loop over each char in the string
+
+Base Conversion
+42b10 - 
+to 16
+- if num > base -> num = (num/base to int), add to string
+42 / 16 = 2 rm a
+- if num < base -> num add to string
+- print string
