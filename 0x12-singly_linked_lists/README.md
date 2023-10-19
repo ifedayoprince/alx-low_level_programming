@@ -1,11 +1,7 @@
 # C - Singly linked lists
 
-In this project, I practiced building and using singly linked lists
-in C while learning when and why to use linked lists versus arrays.
-
-## Tests :heavy_check_mark:
-
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+In this project, I learned and practiced how to build and use a singly linked list in C.
+I also understood the when and why to use linked lists over arrays.
 
 ## Header File :file_folder:
 
