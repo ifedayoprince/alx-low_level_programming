@@ -1,3 +1,8 @@
+/*
+ * File: 3-cp.c
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/stat.h>

@@ -1,3 +1,8 @@
+/*
+ * File: 100-elf_header.c
+ * Auth: Ifedayo P Oni <ifedayoprince@gmail.com>
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -26,8 +31,10 @@ void print_error(const char *msg)
  */
 void print_elf_header_info(const Elf64_Ehdr *header)
 {
+	int i = 0;
+
 	printf("  Magic:   ");
-	for (int i = 0; i < EI_NIDENT; ++i)
+	for (i = 0; i < EI_NIDENT; ++i)
 	{
 		printf("%02x ", header->e_ident[i]);
 	}
