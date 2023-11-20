@@ -48,15 +48,23 @@ void print_elf_header_info(const Elf64_Ehdr *header)
 		   "2's complement, little endian" : "Unknown data format");
 	printf("  Version:                           %d (current)\n",
 		   header->e_ident[EI_VERSION]);
-	printf("  OS/ABI:                            %s\n",
-		   header->e_ident[EI_OSABI] == ELFOSABI_SYSV ?
-		   "UNIX - System V" : "Unknown OS/ABI");
+	printf("  OS/ABI:                            UNIX - %s\n",
+			header->e_ident[EI_OSABI] == ELFOSABI_SYSV
+			? "System V" : header->e_ident[EI_OSABI] == ELFOSABI_HPUX	 ? "HP-UX"
+																 : header->e_ident[EI_OSABI] == ELFOSABI_NETBSD	 ? "NetBSD"
+																 : header->e_ident[EI_OSABI] == ELFOSABI_LINUX	 ? "Linux"
+																 : header->e_ident[EI_OSABI] == ELFOSABI_SOLARIS ? "Solaris"
+																 : header->e_ident[EI_OSABI] == ELFOSABI_AIX	 ? "AIX"
+																 : header->e_ident[EI_OSABI] == ELFOSABI_FREEBSD ? "FreeBSD"
+																 : header->e_ident[EI_OSABI] == ELFOSABI_OPENBSD ? "OpenBSD"
+																												 : "");
+
 	printf("  ABI Version:                       %d\n",
 		   header->e_ident[EI_ABIVERSION]);
 	printf("  Type:                              %s\n",
 		   header->e_type == ET_EXEC ? "EXEC (Executable file)" : "Unknown type");
-	printf("  Entry point address:               0x%lx\n",
-		   (unsigned long)header->e_entry);
+	printf("  Entry point address:               0x%x\n",
+		   header->e_entry);
 }
 
 /**
