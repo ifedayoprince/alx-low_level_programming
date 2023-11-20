@@ -61,7 +61,7 @@ void print_args_error(int ret, char *msg, char *add, int ecode)
 int main(int argc, char **argv)
 {
 	int fromFd, ret, toFd;
-	char buff[1024];
+	char buff[1024 * 3];
 
 	if (argc != 3)
 	{
@@ -72,7 +72,7 @@ int main(int argc, char **argv)
 	print_args_error(fromFd, "Error: Can't read from file %s\n", argv[1], 98);
 	toFd = open(argv[2], O_APPEND | O_WRONLY | O_CREAT, 0664);
 
-	ret = read(fromFd, buff, 1024);
+	ret = read(fromFd, buff, 1024 * 3);
 	if (ret == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
