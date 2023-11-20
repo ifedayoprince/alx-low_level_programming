@@ -63,8 +63,8 @@ void print_elf_header_info(const Elf64_Ehdr *header)
 		   header->e_ident[EI_ABIVERSION]);
 	printf("  Type:                              %s\n",
 		   header->e_type == ET_EXEC ? "EXEC (Executable file)" : "Unknown type");
-	printf("  Entry point address:               0x%x\n",
-		   header->e_entry);
+	printf("  Entry point address:               0x%lx\n",
+		   (unsigned int) header->e_entry);
 }
 
 /**
