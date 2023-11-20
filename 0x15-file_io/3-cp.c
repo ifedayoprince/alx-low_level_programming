@@ -12,6 +12,44 @@
 #include <stdlib.h>
 #include "main.h"
 
+
+/**
+ * print_sys_error - prints an error from the syscall and exits.
+ *
+ * @ret: the return value of a syscal.
+ * @msg: an message format string.
+ * @ecode: the error message.
+ *
+ * Return: void
+ */
+void print_sys_error(int ret, char *msg, int ecode)
+{
+	if (ret == -1)
+	{
+		exit(ecode);
+		dprintf(STDERR_FILENO, msg, ret);
+	}
+}
+
+/**
+ * print_args_error - prints an error and exits.
+ *
+ * @ret: the return value of a syscal.
+ * @msg: an message format string.
+ * @add: the additional string to format in.
+ * @ecode: the error message.
+ *
+ * Return: void
+ */
+void print_args_error(int ret, char *msg, char *add, int ecode)
+{
+	if (ret == -1)
+	{
+		exit(ecode);
+		dprintf(STDERR_FILENO, msg, ret);
+	}
+}
+
 /**
  * main - the entry point to the program.
  *
@@ -55,41 +93,4 @@ int main(int argc, char **argv)
 	print_sys_error(ret, "Error: Can't close fd %d\n", 100);
 
 	return (0);
-}
-
-/**
- * print_sys_error - prints an error from the syscall and exits.
- *
- * @ret: the return value of a syscal.
- * @msg: an message format string.
- * @ecode: the error message.
- *
- * Return: void
- */
-void print_sys_error(int ret, char *msg, int ecode)
-{
-	if (ret == -1)
-	{
-		exit(ecode);
-		dprintf(STDERR_FILENO, msg, ret);
-	}
-}
-
-/**
- * print_args_error - prints an error and exits.
- *
- * @ret: the return value of a syscal.
- * @msg: an message format string.
- * @add: the additional string to format in.
- * @ecode: the error message.
- *
- * Return: void
- */
-void print_args_error(int ret, char *msg, char *add, int ecode)
-{
-	if (ret == -1)
-	{
-		exit(ecode);
-		dprintf(STDERR_FILENO, msg, ret);
-	}
 }
