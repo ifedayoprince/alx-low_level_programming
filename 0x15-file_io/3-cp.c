@@ -46,7 +46,7 @@ void print_args_error(int ret, char *msg, char *add, int ecode)
 	if (ret == -1)
 	{
 		exit(ecode);
-		dprintf(STDERR_FILENO, msg, ret);
+		dprintf(STDERR_FILENO, msg, add);
 	}
 }
 
