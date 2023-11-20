@@ -10,6 +10,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <elf.h>
+#include "main.h"
 
 /**
  * print_error - writes the error to standard output.
